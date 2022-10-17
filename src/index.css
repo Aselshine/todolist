@@ -1,0 +1,39 @@
+
+
+header{
+  background-color: #F2CEDA;
+ display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+
+main {
+  height: 860px;
+  display: flex;
+  margin-top: 10px;
+  background-color: #F2CEDA;
+}
+main h1{
+  margin-left: 250px;
+  margin-top: 300px;
+}
+
+
+
+delivery {
+  height: 200px;
+ display: flex;
+ justify-content: space-between;
+}
+footer{
+
+height: 100px;
+background-color: black;
+}
+
+prefooter{
+  height: 650px;
+  display: flex;
+  background-color: #F2CEDA;
+}
