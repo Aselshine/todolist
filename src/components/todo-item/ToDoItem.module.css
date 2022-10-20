@@ -1,0 +1,16 @@
+
+
+.edit {
+border-radius: 4px ;
+margin-left: 70vh;
+background-color:rgb(30, 87, 37);
+border-color:rgb(30, 87, 37) ;
+}
+
+
+.delete{
+    border-color:rgb(244, 89, 89) ;
+    border-radius: 4px ;
+    background-color: rgb(244, 89, 89);
+}
+

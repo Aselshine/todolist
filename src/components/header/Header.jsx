@@ -1,21 +1,10 @@
-
-
+import css from "./Header.module.css"
 
 const Header = () => {
-  return ( 
-   
-   <header>
- <p>   Home </p>
- <p>product </p>
- <p>pricing </p>
- <p>Testimonials </p>
- <p>Contact Us</p>
-   </header>
-  
-  
-  ); 
+    return (
+        <div className={css.wrapper}>
+        <h1 className={css.title}>ToDos (2/4)</h1>
+        </div>
+    )
 }
-
-
- 
-export default Header;
+export default Header

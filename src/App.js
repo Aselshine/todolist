@@ -1,25 +1,23 @@
 
 import './App.css';
-import Header from './components/header/Header';
-import Main from './components/Main/Main';
-import Footer from './components/footer/Footer';
-import Delivery from './components/Delivery/Delivery';
-import Prefooter from './components/prefooter/prefooter';
-
-
-
-
-
+import CreateToDo from './components/create-todo/CreateTodo';
+import Header from './components/header/header';
+import ToDoItem from './components/todo-item/ToDoItem';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Main/>
-      <Delivery/>
-     <Prefooter/>
-      <Footer/>
-     
+      <Header />
+      <div className='content'>
+        <CreateToDo />
+        <div className='list'>
+        
+          <ToDoItem />
+          <ToDoItem />
+          <ToDoItem />
+          <ToDoItem />
+        </div>
+      </div>
     </div>
   );
 }
