@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import CreateToDo from './components/create-todo/CreateTodo';
-import Header from './components/header/header';
+import Header from './components/header/Header';
 import ToDoItem from './components/todo-item/ToDoItem';
 
 
