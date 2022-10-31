@@ -17,17 +17,13 @@ const ToDoItem = (props) => {
 
 
   const handleEdit = () =>{
- setEdit(!isEdit)
+    setEdit(!isEdit)
   }
 
   const submit = (e) =>{
     e.preventDefault();
     props.onEdit(props.id, inp)
     setEdit(false)
-  }
-
-  const onEdit = (id, newText) =>{
-  
   }
 
   return (
