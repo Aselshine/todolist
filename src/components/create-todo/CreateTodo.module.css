@@ -1,9 +1,27 @@
-.enter{
-    width: 90vh;
+
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 130px;
  
 }
 
-.submit{
-    background-color: #4fc3e7;
-    border-color:#4fc3e7 ;
+.wrapper input{
+    padding: 12px 5px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid rgb(199, 199, 199 );
+}
+
+.wrapper button{
+    color: azure;
+    font-size: 18px;
+    border: none;
+    border-radius:  0 6px 6px 0 ;
+    border: 1px solid rgb(199, 199, 199 );
+    background-color: rgb(83, 28, 222);
+    cursor: pointer;
 }

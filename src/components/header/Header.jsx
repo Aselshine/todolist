@@ -1,10 +1,14 @@
 import css from "./Header.module.css"
+import { useState } from "react"
 
-const Header = () => {
+const Header = (props) => {
+ 
+
     return (
         <div className={css.wrapper}>
-        <h1 className={css.title}>ToDos (2/4)</h1>
+            <h1 className={css.title}> ToDos ({props.todoDone} / {props.todoLength})</h1>
         </div>
+
     )
 }
-export default Header
+export default Header;

@@ -1,12 +1,31 @@
-import  css from './CreateTodo.module.css'
+import { useState } from "react";
+import css from './CreateTodo.module.css'
 
-const CreateToDo = () =>{
-    return (
-        <div>
-            <input className= {css.enter} placeholder="Enter todo here" type="text" />
-            <button className={css.submit}>Submit</button>
-         </div>
-    );
+
+const CreateToDo = (props) => {
+  const [inpValue, setInpValue] = useState("");
+
+
+  const submit = (event) => {
+    event.preventDefault();
+    props.onAddTodo(inpValue)
+    setInpValue(" ")
+  }
+
+ 
+
+
+  const handleInput = (event) => {
+    setInpValue(event.target.value)
+  }
+
+
+  return (
+    <form onSubmit={submit} className={css.wrapper}>
+      <input value={inpValue} onChange={handleInput} type="text" placeholder='Enter some todo' />
+      <button>+Add</button>
+    </form>
+  );
 };
 
 

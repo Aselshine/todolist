@@ -1,16 +1,51 @@
+.wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
 
+.wrapper > div, .wrapper > label{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
 
-.edit {
-border-radius: 4px ;
-margin-left: 70vh;
-background-color:rgb(30, 87, 37);
-border-color:rgb(30, 87, 37) ;
+.btn{
+    padding: 10px 12px;
+    background-color: rgb(83, 28, 222);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.todoDone {
+    text-decoration: line-through;
 }
 
 
-.delete{
-    border-color:rgb(244, 89, 89) ;
-    border-radius: 4px ;
-    background-color: rgb(244, 89, 89);
+
+.formWrapper{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+ 
 }
 
+.formWrapper input{
+    padding:  5px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid rgb(199, 199, 199 );
+}
+
+.formWwrapper button{
+    color: azure;
+    font-size: 18px;
+    border: none;
+    border-radius:  0 6px 6px 0 ;
+    border: 1px solid rgb(199, 199, 199 );
+    background-color: rgb(83, 28, 222);
+    cursor: pointer;
+}

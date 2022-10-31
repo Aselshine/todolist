@@ -11,12 +11,11 @@
     display: grid;
     grid-gap: 10px;
 }
-.list{
-  
-    display: grid;
-    grid-gap: 20px;
+
+.content_body{
+border: 1px solid rgb(199, 199, 199);
 }
 
-.list :nth-child(even){
-    background-color: rgb(212, 201, 201);
+.content_body >div:nth-child(even){
+    background-color: rgb(220, 220, 220);
 }
